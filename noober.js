@@ -77,11 +77,10 @@ function pushNewArray(ride) {
 window.addEventListener('DOMContentLoaded', function () {
 
   document.querySelector("#all-filter").addEventListener("click", async function (event) {   
-    console.log("All-Filter button clicked");
+    console.log("All-Rides button clicked");
     document.querySelector('.rides').innerHTML = ""
     newArray = [];
-
-    
+  
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
     let rideArray = json
@@ -92,7 +91,6 @@ window.addEventListener('DOMContentLoaded', function () {
       renderRides(rideArray)
     }
 
-
   })
 
   document.querySelector("#noober-pool-filter").addEventListener("click", async function (event) {   
@@ -100,7 +98,6 @@ window.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.rides').innerHTML = ""
     newArray = [];
 
-    // API Call
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
     let rideArray = json
@@ -120,7 +117,6 @@ window.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.rides').innerHTML = ""
     newArray = [];
 
-    
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
     let rideArray = json
@@ -140,7 +136,6 @@ window.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.rides').innerHTML = ""
     newArray = [];
 
-    
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
     let rideArray = json
@@ -160,7 +155,6 @@ window.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.rides').innerHTML = ""
     newArray = [];
 
-    
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
     let rideArray = json
