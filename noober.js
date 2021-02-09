@@ -106,7 +106,7 @@ window.addEventListener('DOMContentLoaded', function () {
     let newArray = []
     for (let i = 0; i < json.length; i++) 
     {let ride = json[i]
-    if (levelOfService(ride) == 'Noober Purple') {newArray.push(ride)}}
+    if (levelOfService(ride) == 'Noober Purple') {newArray.push(ride)}}           // To get only Noober Purple Level of Service
     renderRides(newArray)
   })
 
@@ -136,6 +136,7 @@ window.addEventListener('DOMContentLoaded', function () {
     {let ride = json[i]
     if (levelOfService(ride) == 'Noober X') {newArray.push(ride)}}
     renderRides(newArray)
+
   })
 })
 
